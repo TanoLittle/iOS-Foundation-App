@@ -12,6 +12,10 @@
 		2848EC4F29A12D9200EB2DE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2848EC4E29A12D9200EB2DE7 /* Assets.xcassets */; };
 		2848EC5229A12D9200EB2DE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2848EC5129A12D9200EB2DE7 /* Preview Assets.xcassets */; };
 		28BFB14B29A13A60005B5365 /* TabViewSwiftIU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BFB14A29A13A60005B5365 /* TabViewSwiftIU.swift */; };
+		28BFB14D29A13DB6005B5365 /* ExploreSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BFB14C29A13DB6005B5365 /* ExploreSwiftUI.swift */; };
+		28BFB14F29A13F07005B5365 /* FavouritesSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BFB14E29A13F07005B5365 /* FavouritesSwiftUI.swift */; };
+		28BFB15129A13F45005B5365 /* MappinaSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BFB15029A13F45005B5365 /* MappinaSwiftUI.swift */; };
+		28BFB15329A13F60005B5365 /* AccountSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BFB15229A13F60005B5365 /* AccountSwiftUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		2848EC4E29A12D9200EB2DE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2848EC5129A12D9200EB2DE7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		28BFB14A29A13A60005B5365 /* TabViewSwiftIU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewSwiftIU.swift; sourceTree = "<group>"; };
+		28BFB14C29A13DB6005B5365 /* ExploreSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreSwiftUI.swift; sourceTree = "<group>"; };
+		28BFB14E29A13F07005B5365 /* FavouritesSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesSwiftUI.swift; sourceTree = "<group>"; };
+		28BFB15029A13F45005B5365 /* MappinaSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappinaSwiftUI.swift; sourceTree = "<group>"; };
+		28BFB15229A13F60005B5365 /* AccountSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSwiftUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +61,13 @@
 		2848EC4929A12D9100EB2DE7 /* iOS Foundation App */ = {
 			isa = PBXGroup;
 			children = (
-				28BFB14A29A13A60005B5365 /* TabViewSwiftIU.swift */,
-				2848EC4A29A12D9100EB2DE7 /* iOS_Foundation_AppApp.swift */,
 				2848EC4C29A12D9100EB2DE7 /* ContentView.swift */,
+				2848EC4A29A12D9100EB2DE7 /* iOS_Foundation_AppApp.swift */,
+				28BFB14A29A13A60005B5365 /* TabViewSwiftIU.swift */,
+				28BFB14C29A13DB6005B5365 /* ExploreSwiftUI.swift */,
+				28BFB14E29A13F07005B5365 /* FavouritesSwiftUI.swift */,
+				28BFB15029A13F45005B5365 /* MappinaSwiftUI.swift */,
+				28BFB15229A13F60005B5365 /* AccountSwiftUI.swift */,
 				2848EC4E29A12D9200EB2DE7 /* Assets.xcassets */,
 				2848EC5029A12D9200EB2DE7 /* Preview Content */,
 			);
@@ -140,7 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28BFB14F29A13F07005B5365 /* FavouritesSwiftUI.swift in Sources */,
+				28BFB15329A13F60005B5365 /* AccountSwiftUI.swift in Sources */,
 				28BFB14B29A13A60005B5365 /* TabViewSwiftIU.swift in Sources */,
+				28BFB15129A13F45005B5365 /* MappinaSwiftUI.swift in Sources */,
+				28BFB14D29A13DB6005B5365 /* ExploreSwiftUI.swift in Sources */,
 				2848EC4D29A12D9100EB2DE7 /* ContentView.swift in Sources */,
 				2848EC4B29A12D9100EB2DE7 /* iOS_Foundation_AppApp.swift in Sources */,
 			);
