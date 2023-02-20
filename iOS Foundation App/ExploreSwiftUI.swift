@@ -9,7 +9,13 @@ import SwiftUI
 
 struct ExploreSwiftUI: View {
     var body: some View {
-        Text("Qui va creata la pagina Explore\n\twork in progress 👨🏻‍💻")
+        VStack{
+            Spacer()
+            Text("Qui va creata la pagina Explore\n\twork in progress 👨🏻‍💻")
+            Spacer()
+            Text("un altro testo")
+            Spacer()
+        }
     }
 }
 
