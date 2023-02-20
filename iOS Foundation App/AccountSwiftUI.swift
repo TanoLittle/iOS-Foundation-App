@@ -24,6 +24,8 @@ struct AccountSwiftUI: View {
         
         PointOfInterest(name: "Certosa San Marino", image:"CertosaSanMarino", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mollis tellus sed malesuada imperdiet. ", location: .init(latitude: 43.625278, longitude: 13.5065)
                        )]
+    
+    
     var body: some View {
         VStack {
             HStack {
@@ -54,29 +56,31 @@ struct AccountSwiftUI: View {
                     HStack {
                         ForEach(points) { point in
                             VStack{
-                                Image(point.image)
-                                    .resizable()
-                                    .frame(width: .infinity, height: .infinity)
-                                    .scaledToFit()
-                                    .cornerRadius(30)
-                                HStack {
-                                    
-                                    Text(point.name)
-                                        .padding(.leading, 10.0)
-                                    Spacer()
+                                Button{
+                                   
+                                }
+                            label: {
+                                VStack{
+                                    Image(point.image)
+                                        .resizable()
+                                        .frame(width: .infinity, height: .infinity)
+                                        .scaledToFit()
+                                        .cornerRadius(12)
+                                    HStack{
+                                        Text(point.name)
+                                            .multilineTextAlignment(.leading)
+                                            .padding(.leading, 10.0)
+                                            .foregroundColor(.black)
+                                        Spacer()
+                                        }
+                                    }
                                 }
                             }.padding()
+                            
                         }
                     }
                 }
-                /*HStack{
-                    Image("ArcoTraiano")
-                        .resizable()
-                        .scaledToFit()
-                        .cornerRadius(12)
-                }
-                .padding()*/
-                Spacer(minLength: 300)
+               Spacer(minLength: 300)
             }
             Spacer()
         }
