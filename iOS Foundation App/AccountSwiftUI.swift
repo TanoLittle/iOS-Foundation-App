@@ -6,8 +6,24 @@
 //
 
 import SwiftUI
+import MapKit
+
+struct PointOfInterest: Identifiable{
+    var id = UUID()
+    var name : String
+    var image : String
+    var description : String
+    var location : CLLocationCoordinate2D = .init()
+}
+
+
 
 struct AccountSwiftUI: View {
+    var points = [
+        PointOfInterest(name: "Arch of Trajan", image:"ArcoTraiano", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mollis tellus sed malesuada imperdiet. ", location: .init(latitude: 43.625278, longitude: 13.5065)),
+        
+        PointOfInterest(name: "Certosa San Marino", image:"CertosaSanMarino", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mollis tellus sed malesuada imperdiet. ", location: .init(latitude: 43.625278, longitude: 13.5065)
+                       )]
     var body: some View {
         VStack {
             HStack {
@@ -21,7 +37,7 @@ struct AccountSwiftUI: View {
               
             }.padding(50)
             
-            VStack(spacing: -20){
+            VStack(spacing: 0){
                 HStack (){
                     
                     Text("Your Points of Interest")
@@ -34,14 +50,33 @@ struct AccountSwiftUI: View {
                         .foregroundColor(Color.blue)
                     
                 }.padding()
-                
-                HStack{
+                ScrollView(.horizontal) {
+                    HStack {
+                        ForEach(points) { point in
+                            VStack{
+                                Image(point.image)
+                                    .resizable()
+                                    .frame(width: .infinity, height: .infinity)
+                                    .scaledToFit()
+                                    .cornerRadius(30)
+                                HStack {
+                                    
+                                    Text(point.name)
+                                        .padding(.leading, 10.0)
+                                    Spacer()
+                                }
+                            }.padding()
+                        }
+                    }
+                }
+                /*HStack{
                     Image("ArcoTraiano")
                         .resizable()
                         .scaledToFit()
                         .cornerRadius(12)
                 }
-                .padding()
+                .padding()*/
+                Spacer(minLength: 300)
             }
             Spacer()
         }
